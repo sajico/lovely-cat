@@ -1,16 +1,7 @@
 export * from './meow';
-
-export function meow1() {
-    console.log('にゃ〜ん1');
+const meow1 = (arg: string): string => `にゃ〜ん1 / arg:${arg}`;
+module.exports = meow1;
+export namespace Meow2 {
+    export const meow2 = (arg: string): string => `にゃ〜ん2 / arg:${arg}`;
 }
-
-function meow2() {
-    console.log('にゃ〜ん2');
-}
-export default meow2;
-
-const meow3 = () => console.log('にゃ〜ん3');
-module.exports = meow3;
-
-const meow4 = () => console.log('にゃ〜ん4');
-module.exports.default = meow4;
+module.exports.Meow2 = Meow2;
