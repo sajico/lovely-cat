@@ -1,7 +1,7 @@
-export const meow1 = () => console.log('にゃ〜ん1');
-const meow2 = () => console.log('にゃ〜ん2');
-export default meow2;
-const meow3 = () => console.log('にゃ〜ん3');
-module.exports = meow3;
-const meow4 = () => console.log('にゃ〜ん4');
-module.exports.default = meow4;
+export const meow5 = () => console.log('にゃ〜ん5');
+const meow6 = () => console.log('にゃ〜ん6');
+export default meow6;
+const meow7 = () => console.log('にゃ〜ん7');
+module.exports = meow7;
+const meow8 = () => console.log('にゃ〜ん8');
+module.exports.default = meow8;
