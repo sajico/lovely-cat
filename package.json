@@ -1,6 +1,6 @@
 {
   "name": "@sajico/lovely-cat",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "My lovely cat.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
