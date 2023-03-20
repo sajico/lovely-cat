@@ -1,8 +1,8 @@
-import { meow1, meow2, meow3 } from './meow';
+import { meow } from './meow';
 
 export namespace LovelyCat {
-    export const meow = meow1;
+    export const meow = (arg: string): string => `にゃ〜ん! arg:${arg}`;
 }
-export const meow = meow2;
+export const meow2 = meow;
 
-module.exports.default = { LovelyCat, meow, meow3 };
+module.exports.default = { LovelyCat, meow2 };
