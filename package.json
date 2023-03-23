@@ -8,7 +8,7 @@
     "meow": "dist/local-ip.js"
   },
   "scripts": {
-    "prepare": "npm run build",
+    "prepare": "npm run build && mkdir bin && mv -f dist/bin/local-ip.js bin/local-ip.js && chmod 755 bin/local-ip.js",
     "build": "npx tsc"
   },
   "author": "Mitsumasa Saji",
