@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "meow": "dist/local-ip.js"
+    "local-ip": "bin/local-ip.js"
   },
   "scripts": {
     "prepare": "npm run build && mkdir -p bin && mv -f dist/bin/local-ip.js bin/local-ip.js && chmod 755 bin/local-ip.js",
