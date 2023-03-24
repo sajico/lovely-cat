@@ -5,10 +5,10 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "local-ip": "bin/local-ip.js"
+    "local-ip": "dist/bin/local-ip.js"
   },
   "scripts": {
-    "prepare": "npm run build && mkdir -p bin && mv -f dist/bin/local-ip.js bin/local-ip.js && chmod 755 bin/local-ip.js",
+    "prepare": "npm run build && chmod 755 ./dist/bin/local-ip.js",
     "build": "npx tsc"
   },
   "author": "Mitsumasa Saji",
