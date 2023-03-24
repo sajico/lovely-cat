@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 import { networkInterfaces } from 'os';
-
-const getIpAddress = (): string | null => {
-    const nets = networkInterfaces();
-    const net = nets['en0']?.find(v => v.family === 'IPv4');
-    return !!net ? net.address : null;
-};
-console.log(getIpAddress());
+const ip: string = Object.entries(networkInterfaces())
+    .map(([_, nics]) => nics).flat()
+    .filter(nic => !nic?.internal && nic?.family === 'IPv4')
+    .map(nic => nic?.address ?? '')
+    .filter(ip => !ip.startsWith('169.254.'))
+    .slice(0, 1).join('');
+console.log(ip);
